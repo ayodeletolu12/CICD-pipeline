@@ -1,5 +1,5 @@
-resource "aws_security_group" "demo-sg" {
-  name        = "demo-sg"
+resource "aws_security_group" "demo-ci/cd-terraform-sg" {
+  name        = "demo-ci/cd-terraform-sg"
   description = "allow ssh and http traffic"
 
   ingress {
