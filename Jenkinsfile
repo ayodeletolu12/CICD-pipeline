@@ -2,12 +2,12 @@ pipeline {
     agent any
     
     tools {
-        terraform 'jenkins-terraform'
+        terraform 'Terraform installation'
     }
     stages {
         stage ("checkout from GIT") {
             steps {
-                git branch: 'main', credentialsId: 'aa3e80aa-e369-421e-a28e-21c892e2e6da', url: 'https://github.com/ayodeletolu12/CICD-pipeline.git'
+                git branch: 'main', credentialsId: 'My-Github', url: 'https://github.com/ayodeletolu12/CICD-pipeline.git'
             }
         }
         stage ("terraform init") {
